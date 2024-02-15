@@ -14,18 +14,6 @@ export default function App() {
         initialRouteName="Login"
         screenOptions={{
           headerShown: false,
-          title: "Welcome",
-          headerStyle: {
-            backgroundColor: "#075eec",
-          },
-          headerTintColor: "#fff",
-          headerTitleStyle: { fontWeight: "bold" },
-          headerTitleAlign: "center",
-          headerRight: () => (
-            <Pressable onPress={() => alert("Menu is clicked")}>
-              <Text style={{ color: "#fff", fontWeight: "bold" }}>Menu</Text>
-            </Pressable>
-          ),
         }}
       >
         <Stack.Screen name="Login" component={LoginScreen} />
@@ -35,12 +23,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
