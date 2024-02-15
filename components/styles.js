@@ -185,6 +185,6 @@ export const welcomeScreenStyles = StyleSheet.create({
     fontWeight: "700",
     marginTop: 10,
     textAlign: "center",
-    color: "#1e1e1e",
+    color: colors.primary,
   },
 });
